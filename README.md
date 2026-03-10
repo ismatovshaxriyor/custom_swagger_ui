@@ -56,7 +56,7 @@ SPECTACULAR_SETTINGS = {
 
 ## 3. Custom Swagger view
 
-### `tasks/views.py`
+### `myapp/views.py`
 
 `SpectacularSwaggerView` dan voris qilib, custom template bering:
 
@@ -77,7 +77,7 @@ class CustomSwaggerView(SpectacularSwaggerView):
 ```python
 from django.urls import path
 from drf_spectacular.views import SpectacularAPIView, SpectacularRedocView
-from tasks.views import CustomSwaggerView
+from myapp.views import CustomSwaggerView
 
 swagger_urls = [
     path("schema/", SpectacularAPIView.as_view(), name="schema"),
